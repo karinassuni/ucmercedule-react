@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import BlockSchedule from './BlockSchedule'
-import './index.css';
+import BlockSchedule from './BlockSchedule';
 
 const courses = [
   {
@@ -28,7 +27,7 @@ const courses = [
   }
 ]
 
-ReactDOM.render(
-  <BlockSchedule courses={courses}/>,
-  document.getElementById('root')
-);
+it('renders without crashing', () => {
+  const div = document.createElement('div');
+  ReactDOM.render(<BlockSchedule courses={courses}/>, div);
+});

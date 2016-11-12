@@ -1,0 +1,33 @@
+.CourseBlock {
+  width: 16em;
+  height: 4em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  margin-bottom: 0.1em;
+  background-color: #FF8FAF;
+  border-radius: 0.2em;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.CourseBlock p {
+  margin: 0;
+}
+
+.CourseBlock-name {
+  font-weight: bold;
+}
+
+.CourseBlock-id {
+  font-size: 0.8em;
+}
+
+.CourseBlock-crn {
+  font-style: oblique;
+}
+
+.CourseBlock-time {
+  font-size: 0.8em;
+}
