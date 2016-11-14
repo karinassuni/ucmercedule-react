@@ -8,10 +8,8 @@ const courses = [
     cnum: "ANTH-003-01",
     type: "LECT",
     crn: 10265,
-    time: {
-      start: "12:00PM",
-      end: "1:15PM"
-    },
+    start: {hour: 11, minute: 30},
+    end: {hour: 13, minute: 15},
     days: "TR"
   },
   {
@@ -19,10 +17,8 @@ const courses = [
     cnum: "PHYS-115-01",
     type: "LECT",
     crn: 15390,
-    time: {
-      start: "1:30PM",
-      end: "2:45PM"
-    },
+    start: {hour: 13, minute: 30},
+    end: {hour: 14, minute: 45},
     days: "TR"
   }
 ]

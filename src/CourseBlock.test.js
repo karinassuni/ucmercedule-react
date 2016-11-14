@@ -7,10 +7,8 @@ const course = {
     cnum: "PHYS-115-01",
     type: "LECT",
     crn: 15390,
-    time: {
-      start: "1:30PM",
-      end: "2:45PM"
-    },
+    start: {hour: 11, minute: 30},
+    end: {hour: 13, minute: 15},
     days: "TR"
   }
 
