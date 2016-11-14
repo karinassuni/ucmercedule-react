@@ -1,0 +1,13 @@
+.HourLabels {
+  width: auto;
+  float: left;
+  margin-right: 2%;
+  margin-top: 1.2em;
+}
+
+.hourLabel {
+  height: 5.4em;
+  font-size: 75%;
+  margin-top: 20%;
+  text-align: center;
+}

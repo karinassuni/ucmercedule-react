@@ -1,4 +1,5 @@
 import React from 'react'
+import HourLabels from './HourLabels'
 import CourseBlock from './CourseBlock'
 import './BlockSchedule.css'
 
@@ -69,6 +70,10 @@ const BlockSchedule = ({courses}) => {
 
   return (
     <div className="BlockSchedule">
+      <HourLabels
+        earliestHour={earliestHour}
+        latestHour={latestHour}
+      ></HourLabels>
       <div className="weekday">
         <p className="weekdayLabel">M</p>
         {weekdayElements.M}
