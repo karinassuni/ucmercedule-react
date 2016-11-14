@@ -1,6 +1,7 @@
 import React from 'react'
 import HourLabels from './HourLabels'
 import Weekday from './Weekday'
+import SwipeableViews from 'react-swipeable-views'
 import './BlockSchedule.css'
 
 function getEarliestAndLatestHours(courses) {
@@ -36,21 +37,75 @@ const BlockSchedule = ({courses}) => {
     }
   }
 
+  let weekdayElements = undefined
+  if (screen.width >= 450) {
+    weekdayElements = Object.keys(weekdays).map((day) => (
+      <Weekday
+        day={day}
+        key={day}
+        coursesPerHour={weekdays[day]}
+        earliestHour={earliestHour}
+        latestHour={latestHour}
+        ></Weekday>
+    ))
+  }
+  else {
+    weekdayElements = (
+      <div>
+        <SwipeableViews>
+        <div>
+          <Weekday
+            day="M"
+            key="M"
+            coursesPerHour={weekdays["M"]}
+            earliestHour={earliestHour}
+            latestHour={latestHour}
+          ></Weekday>
+          <Weekday
+            day="T"
+            key="T"
+            coursesPerHour={weekdays["T"]}
+            earliestHour={earliestHour}
+            latestHour={latestHour}
+          ></Weekday>
+        </div>
+        <div>
+          <Weekday
+            day="W"
+            key="W"
+            coursesPerHour={weekdays["W"]}
+            earliestHour={earliestHour}
+            latestHour={latestHour}
+          ></Weekday>
+          <Weekday
+            day="R"
+            key="R"
+            coursesPerHour={weekdays["R"]}
+            earliestHour={earliestHour}
+            latestHour={latestHour}
+          ></Weekday>
+        </div>
+        <div>
+          <Weekday
+            day="F"
+            key="F"
+            coursesPerHour={weekdays["F"]}
+            earliestHour={earliestHour}
+            latestHour={latestHour}
+          ></Weekday>
+        </div>
+        </SwipeableViews>
+      </div>
+    )
+  }
+
   return (
     <div className="BlockSchedule">
       <HourLabels
         earliestHour={earliestHour}
         latestHour={latestHour}>
       </HourLabels>
-      {Object.keys(weekdays).map((day) => (
-        <Weekday
-          day={day}
-          key={day}
-          coursesPerHour={weekdays[day]}
-          earliestHour={earliestHour}
-          latestHour={latestHour}
-        ></Weekday>
-      ))}
+      {weekdayElements}
     </div>
   )
 }

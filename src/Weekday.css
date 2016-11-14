@@ -5,6 +5,14 @@
   margin-right: 0.25%;
 }
 
+@media only screen and (max-width: 450px) {
+
+  .Weekday {
+    width: 45%;
+  }
+
+}
+
 .weekdayLabel {
   height: auto;
   margin-bottom: 1em;

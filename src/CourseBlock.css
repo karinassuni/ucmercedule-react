@@ -64,6 +64,14 @@
 
 }
 
+@media only screen and (max-width: 450px) {
+
+  .time {
+    visibility: visible;
+  }
+
+}
+
 .CourseBlock:hover {
   transform: scale(1.1);
   cursor: pointer;

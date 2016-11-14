@@ -11,6 +11,8 @@
     "bootstrap": "^3.3.7",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
+    "react-motion": "^0.4.5",
+    "react-swipeable-views": "^0.8.0",
     "tinycolor2": "^1.4.1"
   },
   "scripts": {
