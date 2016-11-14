@@ -9,9 +9,9 @@ const courses = [
     cnum: "ANTH-003-01",
     type: "LECT",
     crn: 10265,
-    days: "TR"
     start: {hour: 12, minute: 30},
     end: {hour: 13, minute: 15},
+    days: "MTR"
   },
   {
     name: "Electrodynamics Core II Waves",

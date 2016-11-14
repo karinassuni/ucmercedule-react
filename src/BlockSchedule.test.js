@@ -13,7 +13,7 @@ const courses = [
     days: "TR"
   },
   {
-    name: "Electrodynamics Core II Waves",
+    name: "Electrodynamics Core II Waves Thermodynamics",
     cnum: "PHYS-115-01",
     type: "LECT",
     crn: 15390,
