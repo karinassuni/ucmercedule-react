@@ -6,16 +6,13 @@ const CourseBlock = ({course}) => {
   let start = course.start
   let end = course.end
   return (
-  <div className="CourseBlock">
-    <p className="CourseBlock-name">{course.name}</p>
-    <p className="CourseBlock-id">
-      <span>{course.cnum} </span>
-      <span className="CourseBlock-crn">{course.crn}</span>
-    </p>
-    <span className="CourseBlock-time">
+    <div className="CourseBlock">
+      <p className="name">{course.name}</p>
+      <p className="time">
         {timeToStringNoMeridiem(start)} - {timeToStringNoMeridiem(end)}
-    </span>
-  </div>
-)
+      </p>
+    </div>
+  )
+}
 
 export default CourseBlock
