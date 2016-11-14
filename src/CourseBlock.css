@@ -1,33 +1,97 @@
 .CourseBlock {
-  width: 16em;
-  height: 4em;
+  box-sizing: border-box;
   padding-left: 0.5em;
   padding-right: 0.5em;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
   margin-bottom: 0.1em;
+  position: relative;
+  z-index: 1;
   background-color: #FF8FAF;
-  border-radius: 0.2em;
+  color: white;
+  border-radius: 0.3em;
   text-align: left;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  font-weight: normal;
+  width: 100%;
+  transition: all .2s ease-in-out;
+  box-shadow: 0 0.2em 0.6em lightgrey;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 850px) {
+
+  .CourseBlock {
+  }
+
+  .CourseBlock:hover {
+    width: 120%;
+    height: 120% !important;
+  }
+
+  body .name {
+    font-size: 75%;
+  }
+
+  body .time {
+    font-size: 55%;
+  }
+
+}
+
+@media only screen and (max-width: 650px) {
+
+  .CourseBlock {
+    display: block;
+    word-wrap: break-word;
+  }
+
+  .CourseBlock:hover {
+    width: 130%;
+    height: 130% !important;
+  }
+
+  .CourseBlock:hover .time {
+    visibility: visible;
+    line-height: 200%;
+  }
+
+  .time {
+    visibility: hidden;
+  }
+
+}
+
+.CourseBlock:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  z-index: 2;
+  box-shadow: 0 0 0 white;
 }
 
 .CourseBlock p {
   margin: 0;
 }
 
-.CourseBlock-name {
-  font-weight: bold;
+.name {
+  font-size: 85%;
 }
 
-.CourseBlock-id {
-  font-size: 0.8em;
+.cnum {
+  font-size: 0.7em;
 }
 
-.CourseBlock-crn {
+.crn {
   font-style: oblique;
 }
 
-.CourseBlock-time {
-  font-size: 0.8em;
+.time {
+  font-size: 65%;
+  line-height: 150%;
+  /* Prevent automatic linking of times into events in iOS */
+  pointer-events: none;
+  text-decoration: none;
+  color: inherit;
 }
