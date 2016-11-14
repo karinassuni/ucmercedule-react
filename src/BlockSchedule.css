@@ -1,0 +1,26 @@
+.BlockSchedule {
+  width: 95%;
+  overflow: hidden;
+  height: auto;
+  margin-left: auto;
+}
+
+.weekday {
+  float: left;
+  width: 18%;
+  margin-left: 0.25%;
+  margin-right: 0.25%;
+}
+
+.weekdayLabel {
+  height: auto;
+  margin-bottom: 1em;
+  text-align: center;
+  font-weight: bold;
+  font-size: 95%;
+}
+
+.hour {
+  height: 4.125em;
+  border-top: 1px solid #E6E6E6;
+}
