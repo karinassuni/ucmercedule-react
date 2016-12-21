@@ -3,7 +3,7 @@ import CourseBlock from './CourseBlock'
 import './Weekday.css'
 
 function minuteCssOffset(minute) {
-  return (minute * 0.075) + "em"
+  return (4.125/60 * minute) + "em"
 }
 
 function timesOverlap(time1, time2) {

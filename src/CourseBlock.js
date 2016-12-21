@@ -34,10 +34,14 @@ function getDepartmentColor(department) {
   }
 }
 
+function minutesBetween(start, end) {
+  return (end.hour - start.hour) + (end.minute - start.minute) / 60
+}
+
 const CourseBlock = ({course, style}) => {
   let start = course.start
   let end = course.end
-  let height = ((militaryTime(end) - militaryTime(start)) / 25.5) + "em"
+  let height = 4.125 * (minutesBetween(start, end)) + "em"
   let backgroundColor = getDepartmentColor(course.department)
   return (
     <div className="CourseBlock" style={{...style, height, backgroundColor}}>
