@@ -1,13 +1,12 @@
 .Weekday {
   float: left;
   /* Weekdays altogether take up 100% of the screen minus the 1em width and
-     0.5em margin of HourLabels; divide by 5 so that the 5 weekdays partition */
-  width: calc((100% - 1em - 0.5em) / 5);
+     1.5em margin of HourLabels; divide by 5 so that the 5 weekdays partition */
+  width: calc((100% - 1em - 1.0em) / 5);
 }
 
 .weekdayLabel {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 1.0em;
   font-size: 0.9em;
   font-weight: bold;
   text-align: center;

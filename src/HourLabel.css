@@ -1,12 +1,16 @@
 .HourLabels {
   float: left;
-  margin-right: 0.5em;
-  /* Align with Weekdays by offsetting the size of .weekdayLabel + border */
-  margin-top: calc(0.9em + 1px);
+  margin-right: 1.0em;
+  /* Align with Weekdays using the margin + size of .weekdayLabel + border */
+  margin-top: calc(1.0em + 0.9em + 1px);
 }
 
 .hourLabel {
   width: 1em;
   height: 4.125em;
   text-align: center;
+}
+
+.hourLabelText {
+  font-size: 80%;
 }

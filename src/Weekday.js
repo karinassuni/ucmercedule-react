@@ -40,7 +40,7 @@ const Weekday = ({day, coursesPerHour, earliestHour, latestHour}) => {
 
   return (
     <div className="Weekday">
-      <p className="weekdayLabel">{day}</p>
+      <div className="weekdayLabel">{day}</div>
       {[...hourElements]}
     </div>
   )

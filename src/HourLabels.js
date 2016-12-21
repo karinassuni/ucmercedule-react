@@ -7,7 +7,9 @@ const HourLabels = ({earliestHour, latestHour}) => {
   for (let i = earliestHour; i <= latestHour; ++i) {
     let hour12 = hour24ToHour12(i)
     hourLabels.push(
-      <div className="hourLabel" key={i}>{hour12.hour}</div>
+      <div className="hourLabel" key={i}>
+        <span className="hourLabelText">{hour12.hour}</span>
+      </div>
     )
   }
 
