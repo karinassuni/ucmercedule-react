@@ -1,6 +1,7 @@
 .BlockSchedule {
-  width: 95%;
+  width: 90%;
   overflow: hidden;
   height: auto;
   margin-left: auto;
+  margin-right: auto;
 }

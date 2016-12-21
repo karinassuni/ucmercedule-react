@@ -13,7 +13,6 @@ const HourLabels = ({earliestHour, latestHour}) => {
 
   return (
     <div className="HourLabels">
-      <br></br>
       {[...hourLabels]}
     </div>
   )

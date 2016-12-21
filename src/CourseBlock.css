@@ -1,10 +1,8 @@
 .CourseBlock {
-  box-sizing: border-box;
   padding-left: 0.5em;
   padding-right: 0.5em;
   padding-top: 0.3em;
   padding-bottom: 0.3em;
-  margin-bottom: 0.1em;
   position: relative;
   z-index: 1;
   background-color: #FF8FAF;
@@ -15,7 +13,9 @@
   flex-direction: column;
   justify-content: center;
   font-weight: normal;
-  width: 100%;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
   transition: all .2s ease-in-out;
   box-shadow: 0 0.2em 0.6em lightgrey;
   overflow: hidden;
@@ -72,19 +72,12 @@
 }
 
 .CourseBlock p {
+  /* No "newline" between sibling <p> elements */
   margin: 0;
 }
 
 .name {
   font-size: 85%;
-}
-
-.cnum {
-  font-size: 0.7em;
-}
-
-.crn {
-  font-style: oblique;
 }
 
 .time {

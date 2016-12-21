@@ -1,3 +1,7 @@
+/**
+ * Time objects used by this library are expected to be in 24-hour format
+ */
+
 export function hour24ToHour12(hour) {
   let meridiem = hour < 12 ? 'AM' : 'PM'
   let hourStr = '' + (hour % 12)
